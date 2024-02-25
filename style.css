@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(203, 179, 144);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.box{
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 10px;
+    width: 325px;
+    height: 525px;
+    background-color: rgb(233, 227, 218);
+}
+
+.answer{
+    height: 250px;
+    position: relative;
+}
+
+#calculating {
+    position: absolute;
+    bottom: 60px; /* Adjust as needed to position it where you want */
+    right: 5px; /* Adjust as needed to position it where you want */
+}
+
+#final {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed to position it where you want */
+    right: 6px;
+    font-size: 40px;
+} 
+
+.input {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next line if they exceed container width */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+button{
+    width: 75px;
+    height: 65px;
+    margin: 1px; 
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid rgb(125, 125, 125);
+}
+
+.number{
+    background-color: rgb(255, 255, 255);
+}
+
+#equals{
+    background-color: rgb(203, 179, 144);
+}
