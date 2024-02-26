@@ -3,8 +3,10 @@ let result= document.getElementById("final")
 let calculating= document.getElementById("calculating")
 
 function display(){
-    calculating.innerText= input
+    let displayText = input.replace(/\×/g, "*").replace(/\÷/g, "/");
+    calculating.innerText = displayText;
 }
+
 
 document.querySelectorAll(".number, .operator").forEach(button => {
     button.addEventListener("click", ()=>{
@@ -15,7 +17,7 @@ document.querySelectorAll(".number, .operator").forEach(button => {
 
 document.getElementById("equals").addEventListener("click", ()=>{
     try{
-        let output= eval(input);
+        let output= eval(calculating.innerText);
         result.textContent="= " + output;
         calculating.textContent="";
 
